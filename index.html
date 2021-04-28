@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envato Market</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- fixed top bar  -->
+    <div class="top-bar">
+      <div class="welcome-text">Welcome to STUDY!</div>
+      <div class="contact-details-topbar">
+        <img class="img-topbar" src="./assets/email.png" alt="email" />
+        <div class="text-topbar">demo@gmail.com</div>
+        <img class="img-topbar" src="./assets/phone-call.png" alt="email" />
+        <div>88888888899</div>
+      </div>
+    </div>
+
+    <!-- app icon section -->
+
+    <section>
+      <div class="app-icon-row-container">
+        <div class="app-icon">
+          <img src="./assets/steady-logo-1600256273.png" alt="logo" />
+        </div>
+        <div class="search-auth-container">
+          <input
+            class="search-input"
+            placeholder="Search..."
+            type="text"
+            name="search"
+            id="search"
+          />
+          <img class="search-icon" src="./assets/search-icon.png" alt="seach" />
+          <img src="./assets/user-acc-blk.png" alt="login" />
+          <div class="login-text">Login</div>
+          <div class="signup-text">Sign Up</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- actual navigation bar -->
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="box">
+          <select name="catergories">
+            <option value="" disabled selected hidden>Shop By Category</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+        <div class="navbar-item-container">
+          <ul class="menu">
+            <li>
+              <a href="#home" class="menu-btn"
+                >Home
+                <div class="selected-nabar-item-pill"></div
+              ></a>
+            </li>
+            <li><a href="#products" class="menu-btn">Products</a></li>
+            <li><a href="#services" class="menu-btn">Services</a></li>
+            <li><a href="#gallery" class="menu-btn">Gallery</a></li>
+            <li><a href="#about" class="menu-btn">About</a></li>
+            <li><a href="#contact" class="menu-btn">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-shopping-cart">
+          <img src="./assets/shopping-cart_wh.png" alt="cart-icon" />
+        </div>
+      </div>
+    </nav>
+
+    <!-- slide image container -->
+    <section class="slider-section">
+      <div class="slide-image-container">
+        <!-- <span id="slider-image-one"></span>
+        <span id="slider-image-two"></span> -->
+        <div class="image-container fade" style="display: block">
+          <div class="slider-img-text">
+            <div class="orange-text-slider">Great Deal On</div>
+            <div class="title-slider">STATIONERY</div>
+            <div class="subtitle-slider">
+              Best online store for art & craft supplies
+            </div>
+            <div class="shopnow-btn-slider">SHOP NOW</div>
+          </div>
+          <img class="image-slider" src="./assets/imgback1.jpg" alt="" />
+        </div>
+        <div class="image-container fade">
+          <div class="slider-img-text">
+            <div class="orange-text-slider">Great Deal On</div>
+            <div class="title-slider">STATIONERY</div>
+            <div class="subtitle-slider">
+              Best online store for art & craft supplies
+            </div>
+            <div class="shopnow-btn-slider">SHOP NOW</div>
+          </div>
+          <img class="image-slider" src="./assets/imagback2.jpg" alt="" />
+        </div>
+        <a class="prev-btn-slider" onclick="clickImageBtn(-1)">&#10094;</a>
+        <a class="next-btn-slider" onclick="clickImageBtn(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <!-- shop categories -->
+    <section>
+      <div class="shop-categories">
+        <div class="shop-categories-container">
+          <div style="display: flex; align-items: center">
+            <div class="sort-categories">SHOP BY CATEGORIES</div>
+            <div class="angle-box"></div>
+          </div>
+          <div class="arrow-container">
+            <span class="arrow-span">&#139;</span>
+            <span class="arrow-span">&#155;</span>
+          </div>
+        </div>
+        <div class="categories-card-container">
+          <div class="categories-card">
+            <img src="./assets/calculator_.png" alt="" />
+            <div class="card-details-container">
+              <div class="item-text">Calculator</div>
+              <div class="item-text-shopnow">SHOP NOW >></div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <img src="./assets/notebooks_.png" alt="" />
+            <div class="card-details-container">
+              <div class="item-text">Notebook</div>
+              <div class="item-text-shopnow">SHOP NOW >></div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <img src="./assets/stepler_.png" alt="" />
+            <div class="card-details-container">
+              <div class="item-text">Stepler</div>
+              <div class="item-text-shopnow">SHOP NOW >></div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <img src="./assets/pencil_.png" alt="" />
+            <div class="card-details-container">
+              <div class="item-text">Pencils</div>
+              <div class="item-text-shopnow">SHOP NOW >></div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <img src="./assets/stepler_.png" alt="" />
+            <div class="card-details-container">
+              <div class="item-text">Stepler</div>
+              <div class="item-text-shopnow">SHOP NOW >></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sale banners -->
+    <section class="sale-image-container">
+      <div class="sale-image-row">
+        <img class="row-imgs" src="./assets/banner-1.jpg" alt="banner1" />
+        <div class="sale-image-column">
+          <img class="col-imgs" src="./assets/banner-2.jpg" alt="banner2" />
+          <img class="col-imgs2" src="./assets/banner-3.jpg" alt="banner3" />
+        </div>
+        <img class="row-imgs" src="./assets/banner-4.jpg" alt="banner4" />
+      </div>
+    </section>
+
+    <!-- our section -->
+    <section class="services-section">
+      <div class="services-dark-background">
+        <div class="our-service-text">OUR SERVICES</div>
+      </div>
+      <div class="service-card-container">
+        <div class="services-card">
+          <img class="services-img" src="./assets/bag.png" alt="school-bag" />
+          <div class="service-card-text">School</div>
+        </div>
+        <div class="services-card">
+          <img
+            class="home-esses-img"
+            src="./assets/home-esses.png"
+            alt="home-esses"
+          />
+          <div class="service-card-text">Home Essentials</div>
+        </div>
+        <div class="services-card">
+          <img class="services-img" src="./assets/calc.png" alt="calc" />
+          <div class="service-card-text">Office Supplies</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest products section -->
+    <section>
+      <div class="latest-product-container">
+        <div class="shop-categories-container">
+          <div style="display: flex; align-items: center">
+            <div class="sort-categories">LATEST PRODUCTS</div>
+            <div class="angle-box"></div>
+          </div>
+          <div class="arrow-container">
+            <span class="arrow-span-latest">&#139;</span>
+            <span class="arrow-span-latest">&#155;</span>
+          </div>
+        </div>
+        <div class="row-container-main">
+          <div class="container-col">
+            <div class="latest-prod-card-row-container">
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-1.jpg" alt="" />
+                <div class="latest-prod-name">Ballpoint pens</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$22.94</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-2.jpg" alt="" />
+                <div class="latest-prod-name">Binding Material</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$22.94</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-3.jpg" alt="" />
+                <div class="latest-prod-name">Color Inkjet Paper</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$22.94</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-4.jpg" alt="" />
+                <div class="latest-prod-name">Document Bags</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$8.75</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+            </div>
+            <div class="latest-prod-card-row-container">
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-5.jpg" alt="" />
+                <div class="latest-prod-name">Blinding machine & supplies</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$34.46</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-6.jpg" alt="" />
+                <div class="latest-prod-name">Calendars</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$34.80</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-7.jpg" alt="" />
+                <div class="latest-prod-name">Crystal Craftwork</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$14.28</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-8.jpg" alt="" />
+                <div class="latest-prod-name">First Aid kit</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$14.28</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-col">
+            <div class="latest-prod-card-row-container">
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-1.jpg" alt="" />
+                <div class="latest-prod-name">Ballpoint pens</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$22.94</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-2.jpg" alt="" />
+                <div class="latest-prod-name">Binding Material</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$22.94</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-3.jpg" alt="" />
+                <div class="latest-prod-name">Color Inkjet Paper</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$22.94</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-4.jpg" alt="" />
+                <div class="latest-prod-name">Document Bags</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$8.75</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+            </div>
+            <div class="latest-prod-card-row-container">
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-5.jpg" alt="" />
+                <div class="latest-prod-name">Blinding machine & supplies</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$34.46</div>
+                  <div class="latest-prod-actual-price">$28.68</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-6.jpg" alt="" />
+                <div class="latest-prod-name">Calendars</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$34.80</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-7.jpg" alt="" />
+                <div class="latest-prod-name">Crystal Craftwork</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$14.28</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+              <div class="latest-prod-card">
+                <img src="./assets/lat-prod-8.jpg" alt="" />
+                <div class="latest-prod-name">First Aid kit</div>
+                <div class="latest-prod-price-container">
+                  <div class="latest-prod-sale-price">$14.28</div>
+                  <img src="./assets/shopping-bag.png" alt="shop-bag" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- promoting banner -->
+
+    <section>
+      <div class="promoting-banner">
+        <img src="./assets/807b22b3dbce1c89b8337447443e74ee.jpg" alt="banner" />
+        <div class="promoting-banner-text-container">
+          <div class="promoting-banner-title">STUDENT STATIONERY</div>
+          <div class="promoting-banner-subtitle">
+            It's Time To Get Knowledge
+          </div>
+          <div class="promoting-banner-btn">Shop Now</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our specialities -->
+    <section>
+      <div class="out-specialities-container">
+        <div class="specialities-card">
+          <img src="./assets/airplane.png" alt="" />
+          <div class="specialities-text-container">
+            <div class="specialities-text">FREE SHIPPING</div>
+            <div class="specialities-text-secondary">
+              For all order over $100
+            </div>
+          </div>
+        </div>
+        <div class="specialities-card">
+          <img src="./assets/wallet.png" alt="" />
+          <div class="specialities-text-container">
+            <div class="specialities-text">CASH ON DELIVERY</div>
+            <div class="specialities-text-secondary">100% money back</div>
+          </div>
+        </div>
+        <div class="specialities-card">
+          <img src="./assets/gift-box.png" alt="" />
+          <div class="specialities-text-container">
+            <div class="specialities-text">SPECIAL GIFT CARD</div>
+            <div class="specialities-text-secondary">Offer special bonuses</div>
+          </div>
+        </div>
+        <div class="specialities-card">
+          <img src="./assets/support.png" alt="" />
+          <div class="specialities-text-container">
+            <div class="specialities-text">24/7 SUPPORT</div>
+            <div class="specialities-text-secondary">Answer for question</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us section -->
+    <section>
+      <div class="aboutus-container">
+        <div class="aboutus-left-card">
+          <div class="aboutus-text">About us</div>
+          <div class="aboutus-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, fugiat sapiente nobis fugit optio magni temporibus
+            repellendus voluptas sint eos laborum totam fuga? Non ullam optio,
+            quo beatae sequi culpa? Atque impedit optio rem rerum, doloremque et
+            excepturi voluptates eum ratione maiores expedita vero quasi dolore
+            debitis dignissimos quas inventore possimus. Vitae obcaecati error
+            maiores ducimus! Asperiores nemo ab sunt. Mollitia, quis beatae
+            inventore at aut porro. Veritatis architecto esse corrupti assumenda
+            sequi aut ad eos! Ea odit minus inventore unde exercitationem?
+            Inventore nam eos ratione et, minima delectus cumque. Autem,
+            voluptatum ut quidem placeat neque atque, repudiandae aut ea ex
+            accusamus perferendis itaque doloribus deleniti? Molestiae voluptas
+            reprehenderit nesciunt quos hic error, esse tenetur maiores autem.
+            Corporis, quae numquam! Doloribus ea exercitationem voluptate fugiat
+            reprehenderit molestias sint minus similique vitae dignissimos,
+            nulla sed, repellendus commodi. Aperiam excepturi dolores pariatur,
+            commodi eligendi odio ex, porro repellat placeat sunt quisquam odit.
+          </div>
+        </div>
+        <div class="aboutus-img">
+          <img src="./assets/aboutus-img.png" alt="aboutus" />
+        </div>
+      </div>
+    </section>
+
+    <!-- sample reviews section -->
+
+    <section>
+      <div class="reviews-container">
+        <div class="review-arrows">
+          <div><</div>
+          <div>></div>
+        </div>
+        <div class="review-row">
+          <img
+            class="review-person-img"
+            src="./assets/sample-3.png"
+            alt="review-person"
+          />
+          <div class="review-person-name">sample</div>
+          <img
+            class="qautation-img"
+            src="./assets/quotation-marks.png"
+            alt="quotationmarks"
+          />
+          <div class="review-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+            dolore, dolor, aspernatur tenetur pariatur ab praesentium doloribus
+            laborum sequi reiciendis aliquam? Eos facilis libero facere
+            exercitationem voluptas nihil a tempora?
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- brand section -->
+    <section>
+      <div class="brand-container">
+        <img src="./assets/1brand.jpg" alt="br1" />
+        <img src="./assets/3brand.jpg" alt="br3" />
+        <img src="./assets/4brand.jpg" alt="br4" />
+        <img src="./assets/2brand.jpg" alt="br2" />
+        <img src="./assets/4brand.jpg" alt="br4" />
+        <img src="./assets/3brand.jpg" alt="br3" />
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-main-container">
+          <img src="./assets/steady-logo-1600256273.png" alt="logo" />
+          <div class="footer-main-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+            id eos. Non alias magni eaque, voluptatibus exercitationem quidem
+            natus magnam delectus explicabo,
+          </div>
+          <div class="footer-main-copiright-text">
+            <span>&#169;</span>
+            <div class="copyright-text">Copyright</div>
+            onlinebizz
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-link-headline">Links</div>
+          <div class="footer-link-text">About Us</div>
+          <div class="footer-link-text">Delivery Information</div>
+          <div class="footer-link-text">Privacy Policy</div>
+          <div class="footer-link-text">Terms & Conditions</div>
+          <div class="footer-link-text">Returns Policy</div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-link-headline">Quick Links</div>
+          <div class="footer-link-text-row">
+            <img src="./assets/facebook.png" alt="facebook" />Facebook
+          </div>
+          <div class="footer-link-text-row">
+            <img src="./assets/twitter.png" alt="facebook" />Twitter
+          </div>
+          <div class="footer-link-text-row">
+            <img src="./assets/instagram.png" alt="facebook" />Instagram
+          </div>
+          <div class="footer-link-text-row">
+            <img src="./assets/youtube-logotype.png" alt="facebook" />Youtube
+          </div>
+          <div class="footer-link-text-row">
+            <img src="./assets/my-business.png" alt="facebook" />Google My
+          </div>
+          <div class="footer-link-text-row">Business</div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-link-headline">Contact</div>
+          <div class="footer-link-text-row">
+            <img src="./assets/pin.png" alt="facebook" />14,navkar
+            complex,university road
+          </div>
+          <div class="footer-link-text">Udaipur, Gujrat, 313001 India</div>
+          <div class="footer-link-text-row">
+            <img src="./assets/email.png" alt="facebook" />demo@gmail.com
+          </div>
+          <div class="footer-link-text-row">
+            <img src="./assets/phone-call.png" alt="facebook" />8888888888
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script js -->
+    <script src="./app.js"></script>
+  </body>
+</html>
